@@ -40,9 +40,9 @@ namespace MyApp
              double salary, gross, sales, num1;
              Console.WriteLine("Enter the Fixed Salary, without punctuation (ex: 1500): ");
              raw = double.Parse(Console.ReadLine());
-             Console.WriteLine("Enter the Sales amount (in cash and without punctuation, eg 1500): ");
+             Console.WriteLine("Enter the Sales amount (in cash and without punctuation, ex: 1500): ");
              sales = double.Parse(Console.ReadLine());
-             Console.WriteLine("Enter commission percentage (eg 0.2 = 20%, 0.8 = 80%): ");
+             Console.WriteLine("Enter commission percentage (ex: 0.2 = 20%, 0.8 = 80%): ");
              num1 = double.Parse(Console.ReadLine());
              salary = gross + (sales * num1);
              Console.WriteLine("Full Name: " + name);
