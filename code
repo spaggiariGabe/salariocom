@@ -1,0 +1,24 @@
+using System;
+
+namespace MyApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Escreva o nome completo: ");
+            string nome = (Console.ReadLine());
+            double salario, bruto, vendas, num1;
+            Console.WriteLine("Coloque o Salario fixo, sem pontuação (ex: 1500): ");
+            bruto = double.Parse(Console.ReadLine());
+            Console.WriteLine("Coloque o valor das Vendas (em dinheiro e sem pontuação, ex: 1500): ");
+            vendas = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira a porcentagem de comissão (ex: 0,2 = 20%, 0,8 = 80%): ");
+            num1 = double.Parse(Console.ReadLine());
+            salario = bruto + (vendas * num1);
+            Console.WriteLine("Nome Completo: " + nome);
+            Console.WriteLine("Salario com a comissão: " + salario);
+            Console.WriteLine("Vendas: " + vendas);
+        }
+    }
+}
